@@ -46,7 +46,7 @@ print(f"I was born in {home_towncontaining['city']}, {home_towncontaining['state
 # 	"population = 58000"
 
 for key, val in home_towncontaining.items(): #"Iterate" = for loop?
-    print({key},{val})
+    print(f'{key} = {val}')
 
 # Exercise 6
 # Create an empty list named cohort.
@@ -56,15 +56,23 @@ for key, val in home_towncontaining.items(): #"Iterate" = for loop?
 # 	'fav_food': 'Cheeseburger'
 # }
 # Iterate over cohortprinting out each element.
-cohort = []
 
-cohort.append('student'  'Tina')
+cohort = [] #created empty list named cohort
+for idx, student in enumerate(students):
+    cohort.append({
+        'student': student,
+        'foodscontaining': foodscontaining[idx]}) #why do we use idx in foodscontaining?
+    print(cohort[idx])
+
+
 
 
 # Exercise 7
 # Using the list of studentsand list comprehension, assign to a variable named awesome_studentsa new list containing strings similar to this:
 # ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 # Iterate over awesome_studentsprinting out each string.
+
+
 
 
 
