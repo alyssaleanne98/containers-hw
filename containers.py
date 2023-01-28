@@ -46,7 +46,8 @@ for key, val in home_towncontaining.items():
 # 	"state = California"
 # 	"population = 58000"
 
-# print(home_towncontaining)
+for key, val in home_towncontaining.items(): 
+    print({key},{val})
 
 # Exercise 6
 # Create an empty list named cohort.
