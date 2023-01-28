@@ -62,18 +62,20 @@ for idx, student in enumerate(students):
     cohort.append({
         'student': student,
         'foodscontaining': foodscontaining[idx]}) #why do we use idx in foodscontaining?
+
     print(cohort[idx])
 
 
 
 
 # Exercise 7
-# Using the list of studentsand list comprehension, assign to a variable named awesome_studentsa new list containing strings similar to this:
+# Using the list of students and list comprehension, assign to a variable named awesome_students a new list containing strings similar to this:
 # ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 # Iterate over awesome_studentsprinting out each string.
 
-
-
+awesome_students = [(f"{student} is awesome!") for student in students [:]]
+for student in awesome_students:
+    print(student)
 
 
 # Exercise 8
