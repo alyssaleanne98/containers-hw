@@ -22,7 +22,7 @@ for food in foodscontaining:
 # Exercise 3
 # Using a forloop, print just the last two food strings from foods.
 
-for food in foodscontaining[1:]: #[1:] to the right 
+for food in foodscontaining[1:]: #[1:] moves to the right one 
  print(food)
 
 # Exercise 4
@@ -31,14 +31,22 @@ for food in foodscontaining[1:]: #[1:] to the right
 # "I was born in city, state - population of population"
 
 
+home_towncontaining = {
+    "city": "San Francisco",
+    "state": "California",
+    "population": "too much"
+}
+for key, val in home_towncontaining.items():
+    print(f'I was born in the {key} of {val}')
+
 
 # Exercise 5
-# Iterate over the key: value pairs in home_townand print a string for each item, for example:
+# Iterate over the key: value pairs in home_town and print a string for each item, for example:
 # 	"city = Arcadia"
 # 	"state = California"
 # 	"population = 58000"
 
-
+# print(home_towncontaining)
 
 # Exercise 6
 # Create an empty list named cohort.
