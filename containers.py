@@ -3,17 +3,17 @@
 # Print out the second student's name.
 # Print out the last student's name.
 
-students = ["Alyssa", "Cynthia", "An",]
+students = ["Alyssa", "Cynthia", "An",] # list of named created
 
-print(students[1]) # Second student's name
-print(students[2]) # Last student's name 
+print(students[1]) # Second student's name - calling index 1 
+print(students[2]) # Last student's name - calling index 2
 
 
 # Exercise 2
 # Create a tuple named foodscontaining the same number of foods (strings) as there are names in the studentslist.
 # Use a forloop to print out the string "food goes here is a good food".
 
-foodscontaining = ('pizza', 'coffee', 'brownies') # syntax uses parentheses ()
+foodscontaining = ('pizza', 'coffee', 'brownies') #syntax uses parentheses () and commas (commas make the tuple)
 for food in foodscontaining:
     print(f'{food} is a good food')
 
@@ -22,7 +22,7 @@ for food in foodscontaining:
 # Exercise 3
 # Using a forloop, print just the last two food strings from foods.
 
-for food in foodscontaining[1:]: #[1:] moves to the right one 
+for food in foodscontaining[1:]: #[x:] moves to the right x amount of times
  print(food)
 
 # Exercise 4
@@ -31,14 +31,13 @@ for food in foodscontaining[1:]: #[1:] moves to the right one
 # "I was born in city, state - population of population"
 
 
-home_towncontaining = {
+home_towncontaining = { # dictionary created with keys of city, state, and population 
     "city": "San Francisco",
     "state": "California",
     "population": "too much"
 }
-for key, val in home_towncontaining.items():
-    print(f'I was born in the {key} of {val}')
 
+print(f"I was born in {home_towncontaining['city']}, {home_towncontaining['state']} - with a population of {home_towncontaining['population']}")
 
 # Exercise 5
 # Iterate over the key: value pairs in home_town and print a string for each item, for example:
@@ -46,7 +45,7 @@ for key, val in home_towncontaining.items():
 # 	"state = California"
 # 	"population = 58000"
 
-for key, val in home_towncontaining.items(): 
+for key, val in home_towncontaining.items(): #"Iterate" = for loop?
     print({key},{val})
 
 # Exercise 6
@@ -57,7 +56,9 @@ for key, val in home_towncontaining.items():
 # 	'fav_food': 'Cheeseburger'
 # }
 # Iterate over cohortprinting out each element.
+cohort = []
 
+cohort.append('student'  'Tina')
 
 
 # Exercise 7
