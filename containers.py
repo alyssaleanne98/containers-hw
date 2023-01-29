@@ -10,7 +10,7 @@ print(students[2]) # Last student's name - calling index 2
 
 
 # Exercise 2
-# Create a tuple named foodscontaining the same number of foods (strings) as there are names in the studentslist.
+# Create a tuple named foods containing the same number of foods (strings) as there are names in the studentslist.
 # Use a forloop to print out the string "food goes here is a good food".
 
 foodscontaining = ('pizza', 'coffee', 'brownies') #syntax uses parentheses () and commas (commas make the tuple)
@@ -45,7 +45,7 @@ print(f"I was born in {home_towncontaining['city']}, {home_towncontaining['state
 # 	"state = California"
 # 	"population = 58000"
 
-for key, val in home_towncontaining.items(): #"Iterate" = for loop?
+for key, val in home_towncontaining.items(): #"Iterate" = for loop
     print(f'{key} = {val}')
 
 # Exercise 6
@@ -55,16 +55,15 @@ for key, val in home_towncontaining.items(): #"Iterate" = for loop?
 # 	'student': 'Tina',
 # 	'fav_food': 'Cheeseburger'
 # }
-# Iterate over cohortprinting out each element.
+# Iterate over cohort printing out each element.
 
 cohort = [] #created empty list named cohort
 for idx, student in enumerate(students):
     cohort.append({
         'student': student,
-        'foodscontaining': foodscontaining[idx]}) #why do we use idx in foodscontaining?
+        'foodscontaining': foodscontaining [idx]}) #why do we need an idx in foodscontaining?
 
     print(cohort[idx])
-
 
 
 
@@ -73,11 +72,17 @@ for idx, student in enumerate(students):
 # ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 # Iterate over awesome_studentsprinting out each string.
 
-awesome_students = [(f"{student} is awesome!") for student in students [:]]
-for student in awesome_students:
-    print(student)
+awesome_students = [(f"{student} is awesome!") for student in students [:]] #variable named awesome_students containing the string w/ a splice 
+for student in awesome_students: #iterate = for loop. Loop through each student 
+    print(student) #print student 
 
 
 # Exercise 8
-# Using the tuple foodsand list comprehension within a forloop, print each food string that contains the letter a.
+# Using the tuple foods and list comprehension within a forloop, print each food string that contains the letter a.
 
+newlist = [] #you want a new list only containing the words with the letter a 
+
+for foods in foodscontaining:
+    if "a" in foods:
+        newlist.append(foods) #append adds items to the end of the given list 
+print(newlist)
